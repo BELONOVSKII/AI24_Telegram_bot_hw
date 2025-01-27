@@ -2,6 +2,7 @@ import logging
 from aiogram import BaseMiddleware
 from aiogram.types import Message
 
+logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
 class LoggingMiddleware(BaseMiddleware):
