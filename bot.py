@@ -4,8 +4,6 @@ from config import BOT_TOKEN
 from handlers import setup_handlers
 from middlewares import LoggingMiddleware
 
-# from middlewares import LoggingMiddleware
-
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
