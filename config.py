@@ -1,8 +1,11 @@
 import os
-from dotenv import load_dotenv
 
-# Загрузка переменных из .env файла
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    # Загрузка переменных из .env файла
+    load_dotenv()
+except ModuleNotFoundError:
+    pass
 
 # Чтение токена из переменной окружения
 BOT_TOKEN = os.getenv("BOT_TOKEN")
